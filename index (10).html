@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    
+    <style>
+        /* This styles the whole background page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #473c53, #ccc4d6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* This styles the white form box, making it big and centered */
+        .form-container {
+            background-color: rgb(3, 0, 5);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgb(25, 25, 26);
+            width: 100%;
+            max-width: 400px; /* Makes the box wider and bigger */
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #ada0bd;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        /* This spaces out each input section */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #e2dfe9;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* This makes the input text boxes bigger and sleek */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #beb6c0;
+            border-radius: 6px;
+            box-sizing: border-box; /* Prevents the box from spilling out */
+            transition: border-color 0.3s ease;
+        }
+
+        /* This changes the border color when you click inside a box */
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #dfcde4;
+            outline: none;
+        }
+
+        /* Styles the checkbox layout */
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            color: #f3f0f5;
+            font-size: 14px;
+        }
+
+        /* This makes the Create Account button big, colorful, and clickable */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #5e3b86;
+            color: rgb(203, 177, 233);
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* This makes the button turn slightly darker when you hover your mouse over it */
+        button:hover {
+            background-color: #5f3185;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- We wrapped the form inside a container div to style the white card background -->
+    <div class="form-container">
+        <h2>Create Account to enter Lady Gaga's World and for your Birthday Card!</h2>
+        
+        <form action="birthday.html" method="GET">
+            
+            <!-- Nickname Field -->
+            <div class="input-group">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" name="nickname" placeholder="Nickname" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Create Account</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
